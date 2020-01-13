@@ -1,0 +1,435 @@
+@keyframes loading {
+  from {
+    max-width: 0; } }
+
+@keyframes unloading {
+  from {
+    max-width: 100%; } }
+
+.kz-nav {
+  background-color: transparent !important; }
+  .kz-nav .kz-disp ul {
+    margin-bottom: 0px;
+    list-style-type: none; }
+    .kz-nav .kz-disp ul li {
+      display: inline;
+      padding-right: 40px;
+      font-size: 20px; }
+      .kz-nav .kz-disp ul li .kz-non-a {
+        color: white;
+        background-color: transparent !important; }
+      .kz-nav .kz-disp ul li .dropdown-menu {
+        padding: 0px !important;
+        background-color: transparent !important;
+        border-style: none; }
+      .kz-nav .kz-disp ul li .kz-non-a {
+        color: white;
+        background-color: #2a3139; }
+      .kz-nav .kz-disp ul li a {
+        color: transparent;
+        position: relative;
+        font-weight: 999;
+        transition-duration: 1s;
+        pointer-events: none; }
+      .kz-nav .kz-disp ul li .kz-animate {
+        pointer-events: visible;
+        position: relative; }
+      .kz-nav .kz-disp ul li .kz-animate::before {
+        content: attr(data-content);
+        position: absolute;
+        overflow: hidden;
+        max-width: 100%;
+        color: white;
+        animation: loading 0.5s linear;
+        z-index: 999 !important; }
+      .kz-nav .kz-disp ul li .kz-animate::after {
+        content: '';
+        position: absolute;
+        top: 30px;
+        left: 1px;
+        width: 0px;
+        height: 2px;
+        background-color: white;
+        transition-duration: 0.5s; }
+      .kz-nav .kz-disp ul li .kz-animate:hover::after {
+        content: '';
+        width: 100%;
+        transition-duration: 0.5s; }
+      .kz-nav .kz-disp ul li .kz-animate-back::before {
+        content: attr(data-content);
+        position: absolute;
+        overflow: hidden;
+        max-width: 0%;
+        color: white;
+        animation: unloading 0.5s linear; }
+      .kz-nav .kz-disp ul li a:hover {
+        text-decoration: none; }
+  .kz-nav button {
+    border-color: white !important;
+    border-width: 0.5px; }
+
+.kz-mb {
+  display: block;
+  z-index: 999 !important; }
+  .kz-mb .kz {
+    background-color: #2a3139 !important; }
+    .kz-mb .kz ul {
+      margin-top: 50px;
+      list-style-type: none;
+      padding-left: 0px; }
+      .kz-mb .kz ul li {
+        padding-bottom: 15px;
+        color: white; }
+        .kz-mb .kz ul li a {
+          color: white; }
+        .kz-mb .kz ul li a:hover {
+          text-decoration: none; }
+
+.kz-hero {
+  position: relative;
+  height: 100vh;
+  background: linear-gradient(to right, #32afa9 70%, #a4d4ae 30%);
+  overflow: hidden; }
+  .kz-hero h1 {
+    font-size: 140px;
+    font-weight: 999;
+    margin-left: 80px; }
+  .kz-hero .kz-h1 {
+    margin-top: 80px;
+    margin-left: 100%;
+    color: #53ffc4; }
+  .kz-hero .kz-events-box {
+    position: absolute;
+    border-radius: 5px;
+    padding: 10px;
+    padding-bottom: 0px;
+    padding-right: 40px;
+    background-color: #2a3139;
+    top: 100px;
+    left: 40vw;
+    color: white;
+    font-size: 20px;
+    font-weight: 999;
+    letter-spacing: 1px;
+    max-width: 300px; }
+    .kz-hero .kz-events-box span {
+      margin-left: -50px; }
+  .kz-hero .kz-banner-box {
+    position: absolute;
+    border-radius: 5px;
+    padding: 10px;
+    padding-bottom: 0px;
+    padding-right: 40px;
+    background-color: #2a3139;
+    top: 80vh;
+    left: 10vw;
+    color: white;
+    font-size: 20px;
+    font-weight: 999;
+    letter-spacing: 1px;
+    max-width: 250px; }
+    .kz-hero .kz-banner-box p {
+      margin-left: -50px; }
+  .kz-hero .kz-rishi {
+    position: absolute;
+    left: 60vw;
+    bottom: 0;
+    z-index: 0; }
+    .kz-hero .kz-rishi img {
+      max-height: 80vh; }
+
+.kz-index {
+  z-index: -1; }
+
+.kz-bg-hov {
+  transition-duration: 0.7s;
+  -ms-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2); }
+
+.kz-mid-sec {
+  height: 100vh;
+  overflow: hidden; }
+  .kz-mid-sec .kz-col1 {
+    position: relative;
+    overflow: hidden; }
+    .kz-mid-sec .kz-col1 .kz-bg {
+      position: absolute;
+      background-image: url("../images/left.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      top: 0px;
+      left: 0px;
+      height: 100%;
+      width: 100%;
+      transition-duration: 0.7s; }
+  .kz-mid-sec .kz-col2 {
+    position: relative;
+    transition-duration: 0s;
+    overflow: hidden; }
+    .kz-mid-sec .kz-col2 .kz-bg {
+      position: absolute;
+      background-image: url("../images/center.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      top: 0px;
+      left: 0px;
+      height: 100%;
+      width: 100%;
+      transition-duration: 0.7s; }
+  .kz-mid-sec .kz-col3 {
+    position: relative;
+    transition-duration: 0s;
+    overflow: hidden; }
+    .kz-mid-sec .kz-col3 .kz-bg {
+      position: absolute;
+      background-image: url("../images/right.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      top: 0px;
+      left: 0px;
+      height: 100%;
+      width: 100%;
+      transition-duration: 0.7s; }
+  .kz-mid-sec .kz-first {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.555); }
+  .kz-mid-sec .row {
+    height: 100vh; }
+    .kz-mid-sec .row h2 {
+      color: white;
+      font-size: 60px; }
+    .kz-mid-sec .row p {
+      color: white;
+      font-size: 25px; }
+
+.kz-footer {
+  height: 600px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #a4d4ae; }
+  .kz-footer .kz-social {
+    width: 50px; }
+    .kz-footer .kz-social ul {
+      list-style-type: none;
+      padding-left: 10px;
+      z-index: 999;
+      margin-top: 35vh; }
+      .kz-footer .kz-social ul svg {
+        width: 30px;
+        margin-bottom: 30px;
+        fill: white;
+        padding-left: 2px;
+        padding-right: 2px;
+        border-radius: 5px;
+        transition-duration: 0.5s; }
+        .kz-footer .kz-social ul svg.filler {
+          padding: 0px 0px !important;
+          width: 35px !important;
+          margin-left: -2px; }
+          .kz-footer .kz-social ul svg.filler path {
+            margin-left: 0px !important;
+            width: 100px !important; }
+        .kz-footer .kz-social ul svg.filler:hover {
+          padding: 0px 0px !important;
+          fill: #32afa9;
+          background-color: white !important; }
+      .kz-footer .kz-social ul svg:hover {
+        fill: #32afa9;
+        background-color: white;
+        transition-duration: 0.5s; }
+  .kz-footer .kz-foot-head {
+    color: white; }
+    .kz-footer .kz-foot-head h1 {
+      font-size: 70px; }
+    .kz-footer .kz-foot-head p {
+      color: white;
+      font-size: 20px; }
+      .kz-footer .kz-foot-head p a {
+        transition-duration: 0.7s;
+        color: white; }
+        .kz-footer .kz-foot-head p a:hover {
+          text-decoration: none;
+          color: #7e7c7c;
+          transition-duration: 0.7s; }
+    .kz-footer .kz-foot-head ul {
+      list-style-type: none;
+      padding-left: 0px; }
+      .kz-footer .kz-foot-head ul li {
+        display: inline;
+        margin-right: 20px; }
+        .kz-footer .kz-foot-head ul li svg {
+          width: 40px;
+          fill: white;
+          padding-left: 2px;
+          padding-right: 2px;
+          margin-right: 10px;
+          border-radius: 5px;
+          transition-duration: 0.5s; }
+          .kz-footer .kz-foot-head ul li svg.filler {
+            padding: 0px 0px !important;
+            width: 45px !important;
+            margin-left: 0px; }
+            .kz-footer .kz-foot-head ul li svg.filler path {
+              margin-left: 0px !important;
+              width: 100px !important; }
+          .kz-footer .kz-foot-head ul li svg.filler:hover {
+            padding: 0px 0px !important;
+            fill: #32afa9;
+            background-color: white !important; }
+        .kz-footer .kz-foot-head ul li svg:hover {
+          fill: #a4d4ae;
+          background-color: white;
+          transition-duration: 0.5s; }
+  .kz-footer form {
+    margin-top: 10px; }
+    .kz-footer form input {
+      margin-bottom: 20px;
+      color: white;
+      padding: 5px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      background-color: #2a3139;
+      border-style: solid;
+      border-color: #2a3139;
+      border-radius: 5px; }
+      .kz-footer form input#kz-name {
+        width: 40%; }
+      .kz-footer form input#kz-phone {
+        width: 40%; }
+      .kz-footer form input#kz-mail {
+        width: 80.5%; }
+    .kz-footer form #kz-mssg {
+      color: white;
+      padding: 5px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      width: 80.5%;
+      height: 200px;
+      background-color: #2a3139;
+      border-style: solid;
+      border-color: #2a3139;
+      border-radius: 5px; }
+    .kz-footer form button {
+      color: white;
+      background-color: #a4d4ae;
+      border-style: solid;
+      border-color: white;
+      border-width: 2px;
+      border-radius: 5px;
+      padding: 5px;
+      padding-left: 30px;
+      padding-right: 30px;
+      font-size: 20px;
+      font-weight: 999;
+      transition-duration: 0.7s;
+      position: relative; }
+      .kz-footer form button::before {
+        content: attr(data-content);
+        position: absolute;
+        background-color: #32afa9;
+        width: 0%;
+        height: 0%;
+        top: 50%;
+        left: 50%;
+        transition-duration: 0.7s;
+        border-radius: 5px;
+        overflow: hidden; }
+      .kz-footer form button:hover::before {
+        width: 100%;
+        height: 100%;
+        transition-duration: 0.7s;
+        -ms-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        -o-transform: scale(1.2);
+        transform: scale(1, 1);
+        padding: 5px;
+        padding-left: 30px;
+        padding-right: 30px;
+        transition-duration: 0.7s;
+        transform: translate(-65px, -20px);
+        -ms-transform: translate(-65px, -20px);
+        -webkit-transform: translate(-65px, -20px); }
+
+@media (max-width: 1220px) {
+  .kz-mid-sec .row h2 {
+    font-size: 40px; }
+  form {
+    margin-top: 10px; }
+    form input#kz-name {
+      width: 49% !important; }
+    form input#kz-phone {
+      width: 49% !important; }
+    form input#kz-mail {
+      width: 99.5% !important; }
+    form #kz-mssg {
+      width: 99.5% !important; } }
+
+@media (max-width: 992px) {
+  .kz-mid-sec {
+    height: auto; }
+    .kz-mid-sec .row h2 {
+      font-size: 60px; }
+  .kz-footer {
+    height: auto; }
+  .kz-rishi {
+    display: none; } }
+
+@media (max-width: 670px) {
+  .kz-hero h1 {
+    font-size: 90px; } }
+
+@media (max-width: 558px) {
+  .kz-hero .kz-events-box {
+    left: 20vw;
+    font-size: 15px; }
+  .kz-hero .kz-banner-box {
+    font-size: 15px; }
+  .kz-hero h1 {
+    margin-left: 25px; }
+  .kz-hero .kz-h1 {
+    margin-top: 20px; }
+  .kz-disp {
+    display: none; }
+  .kz-nav {
+    background-color: #2a3139 !important; }
+  .kz-social svg {
+    width: 20px !important;
+    margin-top: 10px; }
+  .kz-foot-head h1 {
+    font-size: 50px !important; }
+  .kz-foot-head p {
+    color: white;
+    font-size: 20px; } }
+
+@media (min-width: 558px) {
+  .kz-mb {
+    display: none; } }
+
+@media (max-width: 470px) {
+  .kz-hero h1 {
+    font-size: 70px; }
+  .kz-hero .kz-banner-box {
+    left: 15vw; } }
+
+@media (max-width: 380px) {
+  .kz-foot-head h1 {
+    font-size: 30px !important; } }
+
+@media (max-height: 800px) {
+  .kz-rishi img {
+    max-height: 80vh; } }
+
+@media (max-height: 600px) {
+  .kz-hero .kz-events-box {
+    top: 15vh; } }
