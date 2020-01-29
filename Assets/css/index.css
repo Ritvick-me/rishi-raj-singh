@@ -132,11 +132,11 @@
       margin-left: -50px; }
   .kz-hero .kz-rishi {
     position: absolute;
-    left: 60vw;
-    bottom: 0;
+    left: 50vw;
+    bottom: -10vh;
     z-index: 0; }
     .kz-hero .kz-rishi img {
-      max-height: 80vh; }
+      height: 90vh !important; }
 
 .kz-index {
   z-index: -1; }
@@ -223,7 +223,7 @@
       list-style-type: none;
       padding-left: 10px;
       z-index: 999;
-      margin-top: 35vh; }
+      margin-top: 42vh; }
       .kz-footer .kz-social ul svg {
         width: 30px;
         margin-bottom: 30px;

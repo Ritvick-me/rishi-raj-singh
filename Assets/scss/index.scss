@@ -162,11 +162,11 @@
     }
     .kz-rishi{
         position: absolute;
-        left: 60vw;
-        bottom: 0;
+        left: 50vw;
+        bottom: -10vh;
         z-index: 0;
         img{
-            max-height: 80vh;
+            height: 90vh !important;
         }
     }
 }
@@ -270,7 +270,7 @@
             list-style-type: none;
             padding-left: 10px;
             z-index: 999;
-            margin-top: 35vh;
+            margin-top: 42vh;
             svg{
                 width: 30px;
                 margin-bottom: 30px;
