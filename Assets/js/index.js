@@ -63,4 +63,35 @@ function restrictAlphabets(e){
     return false;
 }
 
-//FOrm ends here-----------------------------------------
+//Form ends here-----------------------------------------
+
+//Result images fade effect start here-------------------
+
+var fader = $('.kz-fade');
+
+
+fader.each(
+  function(i, val){
+    $(this).hover(function(){
+      fader.addClass('fadeOut');
+      $(this).removeClass('fadeOut');
+    }, function(){
+      fader.removeClass('fadeOut');
+    });
+  }
+);
+
+fader.each(
+  function(i, val){
+    $(this).on('click', function(){
+      $('#kz-modal .col').html(`<img src="./Assets/images/result${i+1}.jpg" alt="image"><br><button>CLOSE</button>`);
+      $('#kz-modal').removeClass('kz-none');
+    })
+  }
+)
+
+$('#kz-modal .row, #kz-modal .row .col').on('click', function(){
+  $('#kz-modal').addClass('kz-none');
+})
+
+//Result images fade effect end here---------------------
